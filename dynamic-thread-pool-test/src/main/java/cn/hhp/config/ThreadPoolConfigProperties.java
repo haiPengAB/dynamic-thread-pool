@@ -9,6 +9,7 @@ import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @Data
+//@ConfigurationProperties: 这是主注解，它告诉Spring Boot，此类的属性应从配置文件中加载。
 @ConfigurationProperties(prefix = "thread.pool.executor.config", ignoreInvalidFields = true)
 public class ThreadPoolConfigProperties {
     /** 核心线程数 */

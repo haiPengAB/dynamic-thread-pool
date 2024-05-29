@@ -1,0 +1,6 @@
+# 主配置文件，通常包含所有环境共有的配置。如果没有特定环境的配置文件被激活，它将作为默认配置。
+spring:
+  application:
+    name: dynamic-thread-pool-test-app
+  profiles:
+    active: dev

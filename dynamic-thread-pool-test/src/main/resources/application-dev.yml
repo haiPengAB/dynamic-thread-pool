@@ -1,0 +1,33 @@
+# 开发环境配置文件。当你在开发环境中运行应用时，这个文件中的配置将覆盖application.yml中的相应配置。
+# 通常，这里包含数据库的开发环境连接信息、日志级别等。
+server:
+  port: 8091
+
+# 线程池配置
+thread:
+  pool:
+    executor:
+      config:
+        core-pool-size: 20
+        max-pool-size: 50
+        keep-alive-time: 5000
+        block-queue-size: 5000
+        policy: CallerRunsPolicy
+
+# 动态线程池管理配置
+dynamic:
+  thread:
+    pool:
+      config:
+        # 状态；true = 开启、false 关闭
+        enabled: true
+        # redis host
+        host: 127.0.0.1
+        # redis port
+        port: 16379
+
+# 日志
+logging:
+  level:
+    root: info
+  config: classpath:logback-spring.xml
