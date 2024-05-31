@@ -4,7 +4,7 @@ import cn.hhp.middleware.dynamic.thread.pool.sdk.domain.model.entity.ThreadPoolC
 
 import java.util.List;
 
-public interface IDynamicThreadPoolServicce {
+public interface IDynamicThreadPoolService {
     List<ThreadPoolConfigEntity> queryThreadPoolList();
 
     ThreadPoolConfigEntity queryThreadPoolConfigByName(String threadPoolName);

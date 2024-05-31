@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  * @author heihaipeng
- * @description
+ * @description Redis 注册中心
  * @create 2024/5/24 16:22
  */
 public class RedisRegistry implements IRegistry {

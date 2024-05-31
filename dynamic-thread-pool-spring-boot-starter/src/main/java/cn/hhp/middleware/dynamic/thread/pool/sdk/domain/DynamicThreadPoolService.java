@@ -13,10 +13,10 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * @author heihaipeng
- * @description
+ * @description 动态线程池服务
  * @create 2024/5/24 12:03
  */
-public class DynamicThreadPoolService implements IDynamicThreadPoolServicce {
+public class DynamicThreadPoolService implements IDynamicThreadPoolService {
     private final Logger logger = LoggerFactory.getLogger(DynamicThreadPoolService.class);
 
     private final String applicationName;
@@ -77,5 +77,7 @@ public class DynamicThreadPoolService implements IDynamicThreadPoolServicce {
         // 设置参数 「调整核心线程数和最大线程数」
         threadPoolExecutor.setCorePoolSize(threadPoolConfigEntity.getCorePoolSize());
         threadPoolExecutor.setMaximumPoolSize(threadPoolConfigEntity.getMaximumPoolSize());
+//        threadPoolExecutor.se
+//        threadPoolExecutor.get
     }
 }
